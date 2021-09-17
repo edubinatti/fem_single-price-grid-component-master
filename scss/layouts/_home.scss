@@ -1,9 +1,16 @@
-@use '../abstracts';
+@use '../abstracts' as *;
 
 body{
-    background-color: black;
+    background-color: $clr-light-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card-block {
-    max-width: 50vw;
+.full-card {
+    max-width: 375px;  
+    margin: 1.5rem;  
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    overflow: hidden;
 }

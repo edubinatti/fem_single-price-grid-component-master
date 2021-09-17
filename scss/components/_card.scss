@@ -1,4 +1,25 @@
+@use '../abstracts' as *;
+
 .card {
-    color: white;
-    background: black;
+  padding: 2rem;
+
+  min-width: 311px;
+  min-height: 228px;
+
+  &:nth-child(1) {
+    background: white;
+  }
+
+  &:nth-child(2) {
+    background: $clr-cyan;
+  }
+
+  &:nth-child(3) {
+    background: hsl(179, 62%, 51%);
+  }
+
+  .price {
+    display: inline-flex;
+    align-items: center;
+  }
 }

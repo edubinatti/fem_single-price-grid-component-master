@@ -1,0 +1,63 @@
+@use '../abstracts' as *;
+@use 'fonts' as *;
+
+body {
+    font-family: $ff-Karla;
+    color: white;
+}
+
+h1 {
+    color: $clr-cyan;
+}
+
+h3 {
+    color:  white;
+}
+
+.card {
+    
+    &:nth-child(1) h3 {
+        color: $clr-bright-yellow;
+    }
+    
+    &:nth-child(1) p {
+        color: $clr-grayish-blue;
+    }
+
+    .price {
+        
+        span:nth-child(1) {
+            font-size: 2rem;
+        }
+        
+        span:nth-child(2) {
+            font-size: 1rem;
+            margin-left: 1rem;
+            opacity: 80%;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        // border: 1px solid black;
+    }
+
+    ol {
+        padding: 0;
+    
+        li {
+            list-style: none;
+            line-height: 1.5em;
+            opacity: 80%;
+        }
+    }
+
+}
+
+
+
+
+

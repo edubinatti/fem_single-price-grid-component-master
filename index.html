@@ -8,55 +8,78 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="stylesheet" href="css/styles.css">
+
   <title>Frontend Mentor | Single Price Grid Component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
+      position: fixed;
+      bottom: 0;
+      left: 0;
       font-size: 11px;
       text-align: center;
+      box-shadow: 0 1px 10px -1px rgb(0 0 0 / 14%);
+      min-width: 100%;
+      padding: 2rem;
+      background-color: white;
+      font-family: 'Lexend Deca', sans-serif;
+      color: black;
+
+      /* display: none; */
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
-  <div class="card-block">
-    Join our community
+  <div class="full-card">
+    <div class="card">
+      <h1>Join our community</h1>
 
-    30-day, hassle-free money back guarantee
+      <h3>30-day, hassle-free money back guarantee</h3>
 
-    Gain access to our full library of tutorials along with expert code reviews.
-    Perfect for any developers who are serious about honing their skills.
+      <p>Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.</p>
 
-    Monthly Subscription
+    </div>
+    <div class="card">
+      <h3>Monthly Subscription</h3>
 
-    &dollar;29 per month
+      <div class="price">
+        <span>&dollar;29</span>
+        <span>per month</span>
+      </div>
+      <p>Full access for less than &dollar;1 a day</p>
 
-    Full access for less than &dollar;1 a day
+      <div class="button"><a href="#">Sign Up</a></div>
+    </div>
+    <div class="card">
+      <h3>Why Us</h3>
 
-    Sign Up
-
-    Why Us
-
-    Tutorials by industry experts
-    Peer &amp; expert code review
-    Coding exercises
-    Access to our GitHub repos
-    Community forum
-    Flashcard decks
-    New videos every week
+      <ol>
+        <li>Tutorials by industry experts</li>
+        <li>Peer &amp; expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ol>
+    </div>
   </div>
 
 
   <footer>
-    <p class="attribution">
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Eduardo Binatti</a>.
-    </p>
+    </div>
   </footer>
 </body>
 

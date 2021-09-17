@@ -1,21 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 body {
-  background-color: black;
+  font-family: "Karla", sans-serif;
+  color: white;
 }
 
-.card-block {
-  max-width: 50vw;
+h1 {
+  color: #2ab2af;
+}
+
+h3 {
+  color: white;
+}
+
+.card:nth-child(1) h3 {
+  color: #c0df34;
+}
+.card:nth-child(1) p {
+  color: #98a6bd;
+}
+.card .price span:nth-child(1) {
+  font-size: 2rem;
+}
+.card .price span:nth-child(2) {
+  font-size: 1rem;
+  margin-left: 1rem;
+  opacity: 80%;
+}
+.card a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.card ol {
+  padding: 0;
+}
+.card ol li {
+  list-style: none;
+  line-height: 1.5em;
+  opacity: 80%;
+}
+
+.card .button {
+  background-color: #c0df34;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card a {
+  min-width: 100%;
+}
+
+.card {
+  padding: 2rem;
+  min-width: 311px;
+  min-height: 228px;
+}
+.card:nth-child(1) {
+  background: white;
+}
+.card:nth-child(2) {
+  background: #2ab2af;
+}
+.card:nth-child(3) {
+  background: #35d0cd;
+}
+.card .price {
+  display: inline-flex;
+  align-items: center;
+}
+
+body {
+  background-color: #e5eff5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-card {
+  max-width: 375px;
+  margin: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
